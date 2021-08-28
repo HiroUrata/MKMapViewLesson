@@ -17,6 +17,29 @@ class ViewController: UIViewController {
     
         //MKMapViewプロパティ
         
+        //Mapの見た目
+        
+        mapView.mapType = .standard
+        //mapView.mapType = .satellite  //航空表示
+        //mapView.mapType = .satelliteFlyover //立体的な航空表示
+        //mapView.mapType = .hybrid //航空表示に.standardのmapが表示
+        //mapView.mapType = .hybridFlyover //立体的な航空表示に.standardのmapが表示
+        
+        //スクロールをさせるか？
+        //mapView.isScrollEnabled = true  //スクロールができる
+        mapView.isScrollEnabled = false  //スクロールができない
+        
+        //ズームのできるようにするか？
+        mapView.isZoomEnabled = true  //ズームができる
+        //mapView.isZoomEnabled = false  //ズームできない
+        
+        
+        //マップを回せるようにするか？
+       // mapView.isRotateEnabled = true  //回せる
+        mapView.isRotateEnabled = false  //回らない
+        
+       
+        
         
     }
     
